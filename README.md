@@ -1,5 +1,13 @@
 # A11Y Contrast Checker 🌗
 
+
+
+<p align="center">
+  <img src="img/demo.gif" alt="Demo GIF" width="500"/>
+</p>
+
+
+
 A simple, responsive web tool to test color contrast ratios between background and text colors — following WCAG accessibility standards.
 
 ## 🧩 Features
