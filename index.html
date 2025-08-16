@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A11Y Contrast Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="title">Contrast Checker</h1>
+        <p class="info">
+            Proper contrast between text and background is essential to ensure readability and web accessibility.
+            Use this tool to verify that your color combinations meet A11Y standards.
+        </p>
+
+        <div class="niveles">
+            <p><strong>AA:</strong> minimum contrast ratio of 4.5:1 (normal text)</p>
+            <p><strong>AAA:</strong> minimum contrast ratio of 7:1 (normal text)</p>
+        </div>
+
+        <div class="preview-ejemplo">
+            <p>This is an example of good contrast: light background with dark text.</p>
+        </div>
+
+        <div class="container__colors">
+            <div class="input-group">
+                <label for="colorFondo">Background Color</label>
+                <input class="color" type="color" id="colorFondo" value="#ffffff" />
+                <button class="copy-btn" data-target="colorFondo">Copy HEX</button>
+            </div>
+
+            <div class="input-group">
+                <label for="colorTexto">Text Color</label>
+                <input class="color" type="color" id="colorTexto" value="#000000" />
+                <button class="copy-btn" data-target="colorTexto">Copy HEX</button>
+            </div>
+        </div>
+
+        <div class="preview" id="preview">
+            <p>Sample text</p>
+        </div>
+
+        <div class="resultado" id="resultado">
+            Ratio: -
+        </div>
+
+        <div class="tema-toggle-bottom">
+            <label id="toggleLabel">
+                <input type="checkbox" id="toggleTema" />
+                <span id="toggleIcon">🌙</span> Dark Mode
+            </label>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p>Augusto Llopis. All rights reserved.</p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+
+</html>
